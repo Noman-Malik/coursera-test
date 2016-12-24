@@ -24,8 +24,8 @@
   <div class = "divStyle">
       <h1 align="center">Lunch Checker</h1>
       <label for="lunchNameList">Enter Lunch Name List: </label>
-      <input type="text" id="lunchNameList" ng-model="lunchNameList" ng-style="inputTextFieldStyle" class="form-control">
-      <button type="button" class = "buttonMargin" ng-click="checkLunchNames()"  class="btn btn-default">Check If Too Much</button>
+      <input type="text" id="lunchNameList" placeholder="List comma separated dishes" ng-model="lunchNameList" ng-style="inputTextFieldStyle" class="form-control">
+      <button type="button" class = "buttonMargin btn btn-default" ng-click="checkLunchNames()">Check If Too Much</button>
       <h4 ng-style="messageColor">{{message}}</h4>
     </div>
 </div>
