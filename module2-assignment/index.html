@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="ShoppingListCheckOff">
+
+<script src="angular/angular.min.js"></script>
+<link rel="stylesheet" href="style/bootstrap.min.css">
+<script src="app/app.js"></script>
+
+<head>
+<style>
+.divStyle{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+.tableMargin{
+  margin-left: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+
+body {
+    background-color: grey;
+}
+
+</style>
+</head>
+<body>
+<h1 class="divStyle" align="center">Shopping Menu</h1>
+  <div ng-controller  = "ToBuyController">
+    <form class="form-horizontal">
+      <label for="itemName" class = "col-sm-1 control-label" >Item Name: </label>
+      <div class = "col-sm-3">
+        <input type="text" id="itemName" placeholder="Enter Item Name here" ng-model="name"  class="form-control" required/>
+      </div>
+      <label for="quantity"  class = "col-sm-1 control-label">Quantity: </label>
+      <div class = "col-sm-3">
+        <input type="number" id="quantity" placeholder="Enter quantity" ng-model="quantity"  class="form-control" required/>
+      </div>
+      <button type="submit" class = "btn btn-default" ng-click="addBuyedItem()">Add buy item</button>
+    </form>
+
+    <div class="row tableMargin" >
+      <div class="col-sm-5">
+          <h1>To Buy</h1>
+          <table>
+            <tr  ng-repeat = "item in buyedList">
+              <td>{{$index+1}}</td>
+              <td style="width : 320px">Buy {{ item.quantity + ' ' + item.name }}</td>
+              <td><button type="submit" class = "btn btn-primary" ng-click="addBoughtItem($index)">bought</button></td>
+              <td><button type="submit" class = "btn btn-primary" ng-click="removeBuyedItem($index)">Del</button></td>
+            </tr>
+          </table>
+        <h3 ng-if = " buyedList.length == 0 ">Everything is bought!</h3>
+      </div>
+      <div class="col-sm-7"  ng-controller="AlreadyBoughtController">
+        <h1>Already Bought</h1>
+        <table>
+          <tr ng-repeat = "item in shoppingService.boughtList">
+            <td>{{$index+1}}</td>
+            <td style="width : 320px">Bought {{ item.quantity + ' ' + item.name }}</td>
+            <td><button type="submit" class = "btn btn-primary" ng-click="deleteBoughtItem($index)">Del</button></td>
+          </tr>
+        <table>
+        <h3 ng-if = " shoppingService.boughtList.length == 0 ">Nothing bought yet</h3>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
