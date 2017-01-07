@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app='NarrowItDownApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <title>Module-3 Solution</title>
+
+    <style>
+      .divStyle{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 150px;
+        margin-left: 80px;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      table {
+        width: 100%;
+        background-color: #f1f1c1;
+      }
+      body {
+        background-color: grey;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="divStyle" align="center"><h1>Search Menu</h1></div>
+    <div id="list" ng-controller='NarrowItDownController'>
+      <form class="form-horizontal">
+        <label for="menuName" class = "col-sm-2 control-label" >Menu Name: </label>
+        <div class = "col-sm-3">
+          <input type="text" id="menuName" placeholder="Enter Menu Item Name here" ng-model="menuItem"  class="form-control" required/>
+        </div>
+        <button type="submit" class = "btn btn-default" ng-click="getMenuItems(menuItem)">Narrow It Down For Me!</button>
+      </form>
+
+      <div ng-if="menuItemList.length > 0">
+        <found-items items="menuItemList" on-remove="removeMenuItem(index)"></found-items>
+      </div>
+      <div ng-if="menuItemList.length == 0">
+        <h2 style="margin-left:125px">Nothing found</h2>
+      </div>
+    </div>
+
+  </body>
+</html>

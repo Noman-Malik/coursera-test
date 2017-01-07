@@ -1,0 +1,26 @@
+<div>
+  <h2 align="right" style="margin-right:1cm">Total Count : {{foundItemsDirectiveCtrl.items.length}}</h2>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Short_name</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price_small</th>
+      <th>Price_large</th>
+      <th>Small_portion_name</th>
+      <th>Large_portion_name</th>
+      <th>Remove</th>
+    </tr>
+  <tr ng-repeat="menuItem in foundItemsDirectiveCtrl.items">
+    <td>{{menuItem.id}}</td>
+    <td>{{menuItem.short_name}}</td>
+    <td>{{menuItem.name}}</td>
+    <td>{{menuItem.description}}</td>
+    <td>{{menuItem.price_small}}</td>
+    <td>{{menuItem.price_large}}</td>
+    <td>{{menuItem.small_portion_name}}</td>
+    <td>{{menuItem.large_portion_name}}</td>
+    <td><button class = "btn btn-default" ng-click="foundItemsDirectiveCtrl.onRemove({index: $index})">Don't want this one! </button></td></tr>
+  </table>
+</div>
