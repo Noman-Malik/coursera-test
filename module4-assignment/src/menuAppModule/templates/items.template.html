@@ -1,0 +1,31 @@
+<!--<h4>List Count: {{$ctrl.items.length}}</h4>
+<ul>
+  <li ng-repeat="item in $ctrl.items">
+    {{ item.name }}
+  </li>
+</ul>-->
+<div>
+  <h2 align="right" style="margin-right:1cm">Total Count : {{$ctrl.items.length}}</h2>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Short_name</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price_small</th>
+      <th>Price_large</th>
+      <th>Small_portion_name</th>
+      <th>Large_portion_name</th>
+    </tr>
+    <tr ng-repeat="item in $ctrl.items">
+      <td>{{item.id}}</td>
+      <td>{{item.short_name}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.price_small}}</td>
+      <td>{{item.price_large}}</td>
+      <td>{{item.small_portion_name}}</td>
+      <td>{{item.large_portion_name}}</td>
+    </tr>
+  </table>
+</div>

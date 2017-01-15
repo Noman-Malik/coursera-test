@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Module-4 Solution</title>
+  <style>
+    .divStyle{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-right: 150px;
+      margin-left: 80px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+    table {
+      width: 100%;
+      background-color: #f1f1c1;
+    }
+    body {
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+<div class="divStyle" align="center">
+  <h1>Welcome to our Restaurant</h1>
+</div>
+<ui-view></ui-view>
+
+<!-- Libraries -->
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+
+<!-- Modules -->
+<script src="src/menuAppModule/menuapp.module.js"></script>
+<script src="src/dataModule/data.module.js"></script>
+
+<!-- Routes -->
+<script src="src/routes.js"></script>
+
+<!-- 'ShoppingList' module artifacts -->
+<script src="src/menuAppModule/categories.component.js"></script>
+<script src="src/menuAppModule/items.component.js"></script>
+<script src="src/menuAppModule/main-categorylist.controller.js"></script>
+<script src="src/dataModule/menudata.service.js"></script>
+<script src="src/menuAppModule/item-detail.controller.js"></script>
+
+</body>
+</html>
