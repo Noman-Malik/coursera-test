@@ -12,17 +12,14 @@
         var $ctrl = this;
         var signupService = SignupService;
         $ctrl.resultMessage = "";
-        //$ctrl.signupObj = {'sss','ss'};
 
         $ctrl.signUpUser = function(signUpObj){
             MenuService.getMenuItemDetail(signUpObj.menuNumber).then(function(data) {
                 signupService.signUpObj = signUpObj;
                 signupService.itemJson = data;
-                signupService.isSignedUp = true;
                 $ctrl.resultMessage = "Your information has been saved.";
             },function(error){
-                $ctrl.resultMessage = "No such menu number exists";
-                signupService.isSignedUp = false;
+                $ctrl.resultMessage = "No such menu number exists"; 
             });
 
         }
