@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="items.template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/menuAppModule/templates/items.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="102">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -105,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-categorylist.template.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main-categorylist.template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menuAppModule/templates/main-categorylist.template.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -375,12 +375,12 @@
       <workItem from="1484430450796" duration="16507000" />
       <workItem from="1484449936407" duration="2111000" />
       <workItem from="1485027446192" duration="293000" />
-      <workItem from="1485042084461" duration="738000" />
+      <workItem from="1485042084461" duration="910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20912000" />
+    <option name="totallyTimeSpent" value="21084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -615,21 +615,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/menuAppModule/templates/items.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/menuAppModule/templates/main-categorylist.template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menuAppModule/templates/items.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

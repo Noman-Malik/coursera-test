@@ -41,6 +41,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sign-up.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/public/security/sign-up.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="my-info.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/public/security/my-info.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,16 +93,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/public/security/signup.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="common.module.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/common.module.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu-item.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu-item.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/public/menu-item/menu-item.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -140,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/common/menu.service.js" />
         <option value="$PROJECT_DIR$/src/public/menu-items/signup.service.js" />
         <option value="$PROJECT_DIR$/src/public/menu-items/menu-items.controller.js" />
-        <option value="$PROJECT_DIR$/src/public/security/sign-up.html" />
         <option value="$PROJECT_DIR$/src/public/public.routes.js" />
         <option value="$PROJECT_DIR$/src/public/security/sign-up.js" />
         <option value="$PROJECT_DIR$/src/public/security/my-info.js" />
@@ -148,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/public/security/my-info.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/public/menu-item/menu-item.html" />
+        <option value="$PROJECT_DIR$/src/public/security/sign-up.html" />
       </list>
     </option>
   </component>
@@ -451,12 +451,12 @@
       <option name="presentableId" value="Default" />
       <updated>1484948328007</updated>
       <workItem from="1484948330211" duration="9000" />
-      <workItem from="1484948951914" duration="35044000" />
+      <workItem from="1484948951914" duration="35800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35053000" />
+    <option name="totallyTimeSpent" value="35809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -568,14 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/security/sign-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/menu/F/F.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -632,14 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="46" column="52" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/security/my-info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -702,6 +686,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/menu-item/menu-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/security/my-info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -710,10 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/menu-item/menu-item.html">
+    <entry file="file://$PROJECT_DIR$/src/public/security/sign-up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        <state relative-caret-position="17">
+          <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
           <folding />
         </state>
       </provider>
